@@ -1,0 +1,12 @@
+#! /bin/sh
+gem source -r 'http://rubygems.org/'
+gem source -a 'http://ruby.taobao.org'
+
+gem install rails
+gem install jekyll
+gem install pry
+gem install watir
+gem install rake
+gem install ruby-debug-ide
+gem install sinatra
+gem install vagrant
