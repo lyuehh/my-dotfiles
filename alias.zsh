@@ -67,3 +67,4 @@ alias gbi='git rebase --interactive'
 
 alias ppm='cd ~/work/project/python_mail'
 alias pwps='cd ~/work/project/webpy_sohu'
+
