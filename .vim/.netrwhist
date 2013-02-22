@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/weiwei/work/project/webpy_sohu/conf'
-let g:netrw_dirhist_2='/usr/local/Cellar/goaccess/0.4.2/share/man/man1'
-let g:netrw_dirhist_3='/Users/weiwei/.vim.backup'
-let g:netrw_dirhist_4='/Users/weiwei/work/project/testmail'
-let g:netrw_dirhist_5='/usr/local/etc/bash_completion.d'
