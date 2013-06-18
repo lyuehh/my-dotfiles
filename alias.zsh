@@ -1,0 +1,2 @@
+
+alias locate="mdfind -name"
