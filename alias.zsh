@@ -1,5 +1,6 @@
 alias locate="mdfind -name"
 alias tree='tree -N'
+alias vaz='vi ~/.zsh.after/alias.zsh'
 
 function gtrss() {
   env gtrs $1
@@ -9,6 +10,12 @@ function gtrss() {
 alias tfgo='tail -f /var/log/goagent.log'
 
 alias gcam='git commit -a -m'
+alias gpom='git pull origin master'
+alias gpuom='git push origin master'
+alias gcos='git checkout mergeSupport'
+alias gpos='git pull origin mergeSupport'
+alias gpuos='git push origin mergeSupport'
+
 
 function myip() {
   ifconfig | grep inet | grep -v inet6 | grep -v 127 | awk '{print $2}'
