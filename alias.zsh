@@ -1,6 +1,10 @@
+export PATH=$PATH:'/Applications/Racket v5.3.6/bin'
 alias locate="mdfind -name"
 alias tree='tree -N'
 alias vaz='vi ~/.zsh.after/alias.zsh'
+alias javac='javac -J-Dfile.encoding=UTF-8'
+alias gems="cd $GEM_HOME/gems/"
+alias npms="/usr/local/share/npm/lib/node_modules"
 
 function gtrss() {
   env gtrs $1
@@ -24,6 +28,7 @@ function myip() {
 
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 command -v md5sum > /dev/null || alias md5sum="md5"
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
@@ -60,3 +65,11 @@ function unidecode() {
 	fi
 }
 
+javar() {
+    for f in "$@"; do
+        javac "$f" && java "${f%.*}"
+    done
+}
+pbhex() {
+    ruby -KUe 'puts `pbpaste`.chars.map { |c| c.ord.to_s(16) }.join(" ")'
+}

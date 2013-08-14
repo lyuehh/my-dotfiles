@@ -6,3 +6,5 @@ sudo pip install PIL
 sudo pip install pyf5
 sudo pip install tornado
 
+sudo easy_install readline
+sudo pip install ipython

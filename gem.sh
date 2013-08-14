@@ -6,3 +6,4 @@ gem install sinatra-contrib
 gem install jekyll
 gem install pry
 gem install lolcat
+gem install vagrant
