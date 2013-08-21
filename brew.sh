@@ -7,6 +7,7 @@ brew install enca
 brew install macvim jpeginfo ngrep
 brew install the_silver_searcher
 brew install terminal-notifier
+brew install gist
 
 brew tap phinze/homebrew-cask
 brew tap homebrew/versions

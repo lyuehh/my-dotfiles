@@ -5,6 +5,7 @@ sudo pip install "Django==1.2"
 sudo pip install PIL
 sudo pip install pyf5
 sudo pip install tornado
+sudo pip install beautifulsoup4
 
 sudo easy_install readline
 sudo pip install ipython

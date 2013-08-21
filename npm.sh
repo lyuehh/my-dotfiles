@@ -1,6 +1,7 @@
 #!/bin/sh
 
 npm install -g gtrs
+npm install -g pinyinjs
 npm install -g coffee-script
 npm install -g jshint
 npm install -g csslint
