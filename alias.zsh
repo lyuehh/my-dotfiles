@@ -12,6 +12,7 @@ function gtrss() {
 }
 
 alias tfgo='tail -f /var/log/goagent.log'
+alias tfs='tail -f /var/log/system.log'
 
 alias gcam='git commit -a -m'
 alias gpom='git pull origin master'
