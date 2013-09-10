@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
+
+movie = ARGV[0]
+url = "http://www.yyets.com/search/index?keyword=" + movie
+
+doc = Nokogiri::HTML(open(URI.escape(url)))
+
+eles = []
+hrefs = []
+
+doc.css('.all_search_li2 a').each do |e|
+    eles.push(e.attr('href'))
+end
+
+eles = eles.select do |e|
+    e.include?('resource')
+end
+
+eles.each do |u|
+    doc2 = Nokogiri::HTML(open(URI.escape(u)))
+    doc2.css('.resod_list a[type=ed2k]').each do |e|
+        hrefs.push(e.attr('href'))
+    end
+end
+
+puts hrefs
+
+
+
