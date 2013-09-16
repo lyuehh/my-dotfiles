@@ -20,6 +20,7 @@ alias gpuom='git push origin master'
 alias gcos='git checkout mergeSupport'
 alias gpos='git pull origin mergeSupport'
 alias gpuos='git push origin mergeSupport'
+alias gpuogp='git push origin gh-pages'
 
 
 function myip() {
@@ -29,6 +30,7 @@ function myip() {
 
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias sniff2="sudo ngrep -d 'en0' -t '^(GET|POST|PUT|DELETE) ' 'tcp and port 80'"
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 command -v md5sum > /dev/null || alias md5sum="md5"
