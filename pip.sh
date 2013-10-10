@@ -1,5 +1,8 @@
 #!/bin/sh
 
+mkdir ~/.pip/
+cp ./pip.conf ~/.pip/
+
 sudo pip install MySQL-python
 sudo pip install "Django==1.2"
 sudo pip install PIL
