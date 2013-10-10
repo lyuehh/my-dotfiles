@@ -9,7 +9,7 @@ sudo pip install beautifulsoup4
 
 sudo easy_install readline
 sudo pip install ipython
-sudo pip install pyzmq matplotlib
+# sudo pip install pyzmq matplotlib
 
 
 ## pip源
