@@ -11,3 +11,4 @@ npm install -g mocha
 npm install -g nodemon
 npm install -g pm2
 npm install -g sfile
+npm install -g marked
