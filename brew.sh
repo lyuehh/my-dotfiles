@@ -19,3 +19,4 @@ brew cask install alfred app-cleaner mesa-sqlite sublime-text textexpander textm
 brew cask install  google-chrome bit-torrent-sync bettertouchtool 
 brew cask install dropbox
 
+# ls -l /usr/local/Library/Formula | grep phinze-cask | awk '{print $9}' | for evil_symlink in $(cat -); do rm -v /usr/local/Library/Formula/$evil_symlink; done
