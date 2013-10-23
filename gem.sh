@@ -8,3 +8,6 @@ gem install pry
 gem install lolcat
 gem install vagrant
 gem install pomo
+gem install awesome_print
+
+# foreman pygments.rb

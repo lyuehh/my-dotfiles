@@ -21,6 +21,7 @@ alias gcos='git checkout mergeSupport'
 alias gpos='git pull origin mergeSupport'
 alias gpuos='git push origin mergeSupport'
 alias gpuogp='git push origin gh-pages'
+alias gcom="git checkout master"
 
 
 function myip() {

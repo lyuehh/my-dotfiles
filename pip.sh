@@ -3,6 +3,7 @@
 mkdir ~/.pip/
 cp ./pip.conf ~/.pip/
 
+sudo easy_install pip
 sudo pip install MySQL-python
 sudo pip install "Django==1.2"
 sudo pip install PIL
@@ -12,6 +13,8 @@ sudo pip install beautifulsoup4
 
 sudo easy_install readline
 sudo pip install ipython
+
+# Sphinx Twisted
 # sudo pip install pyzmq matplotlib
 
 
