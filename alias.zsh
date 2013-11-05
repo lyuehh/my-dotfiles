@@ -1,15 +1,11 @@
 export PATH=$PATH:'/Applications/Racket v5.3.6/bin'
+
 alias locate="mdfind -name"
 alias tree='tree -N'
 alias vaz='vi ~/.zsh.after/alias.zsh'
 alias javac='javac -J-Dfile.encoding=UTF-8'
 alias gems="cd $GEM_HOME/gems/"
 alias npms="/usr/local/share/npm/lib/node_modules"
-
-function gtrss() {
-  env gtrs $1
-  env gtrg $1
-}
 
 alias tfgo='tail -f /var/log/goagent.log'
 alias tfs='tail -f /var/log/system.log'
@@ -23,11 +19,8 @@ alias gpuos='git push origin mergeSupport'
 alias gpuogp='git push origin gh-pages'
 alias gcom="git checkout master"
 
-
-function myip() {
-  ifconfig | grep inet | grep -v inet6 | grep -v 127 | awk '{print $2}'
-  # ipconfig getifaddr en0
-}
+alias g2u="iconv -f gbk -t utf8"
+alias u2g="iconv -f utf8 -t gbk"
 
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
@@ -38,11 +31,19 @@ command -v md5sum > /dev/null || alias md5sum="md5"
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
-
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+function gtrss() {
+  env gtrs $1
+  env gtrg $1
+}
+
+function myip() {
+  ifconfig | grep inet | grep -v inet6 | grep -v 127 | awk '{print $2}'
+  # ipconfig getifaddr en0
+}
 
 function json() {
 	if [ -t 0 ]; then # argument
