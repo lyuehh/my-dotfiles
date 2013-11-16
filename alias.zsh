@@ -1,4 +1,5 @@
 export PATH=$PATH:'/Applications/Racket v5.3.6/bin'
+export PATH=$PATH:'/Users/weiwei/bin/mongodb-osx-x86_64-2.4.8/bin'
 
 alias locate="mdfind -name"
 alias tree='tree -N'
