@@ -2,13 +2,12 @@
 
 if [ $# -ne  3 ];
 then
-    echo "need 3 args.."
+    echo "Usage: rept repeat_times sleep_seconds commands"
     exit 1
 fi
 
 for((i=0;i<$1;i++))
 do
     sleep $2
-    $3
-    echo
+    eval $3
 done
