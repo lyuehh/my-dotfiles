@@ -8,6 +8,6 @@ fi
 
 for((i=0;i<$1;i++))
 do
-    sleep $2
     eval $3
+    sleep $2
 done
