@@ -1,0 +1,83 @@
+
+# Configs
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.r
+config checkDefaultsOnLoad true
+config focusCheckWidthMax 3000
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+#config windowHintsDuration 5
+config windowHintsSpread true
+config windowHintsOrder persist
+config windowHintsTopLeftX (windowSizeX/2)-(windowHintsWidth/2)
+config windowHintsTopLeftY (windowSizeY/2)-(windowHintsHeight/2)
+
+
+# Misc Aliases
+alias showHintsLeftHand hint AOEUIYQJKX
+alias showNormalHint hint AOEUIDHTNSYXFBPKGMCW
+
+# Abstract positions
+alias full          move screenOriginX;screenOriginY                  screenSizeX;screenSizeY
+alias lefthalf      move screenOriginX;screenOriginY                  screenSizeX/2;screenSizeY
+alias righthalf     move screenOriginX+screenSizeX/2;screenOriginY    screenSizeX/2;screenSizeY
+alias uphalf        move screenOriginX;screenOriginY                  screenSizeX;screenSizeY/2
+alias bottomhalf    move screenOriginX;screenOriginY+screenSizeY/2    screenSizeX;screenSizeY/2
+alias center        move screenOriginX+screenSizeX/8;screenOriginY+screenSizeY/8 screenSizeX/8*6;screenSizeY/8*6
+
+alias topLeft       move screenOriginX;screenOriginY                  screenSizeX/2;screenSizeY/2
+alias topRight      move screenOriginX+screenSizeX/2;screenOriginY    screenSizeX/2;screenSizeY/2
+alias bottomLeft    move screenOriginX;screenOriginY+screenSizeY/2    screenSizeX/2;screenSizeY/2
+alias bottomRight   move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2
+
+alias rightmost     move screenOriginX+screenSizeX*0.4;screenOriginY  screenSizeX*0.6;screenSizeY
+alias rightless     move screenOriginX+screenSizeX*0.6;screenOriginY  screenSizeX*0.4;screenSizeY
+alias leftmost      move screenOriginX;screenOriginY                  screenSizeX*0.6;screenSizeY
+alias leftless      move screenOriginX;screenOriginY                  screenSizeX*0.4;screenSizeY
+
+# 1 monitor layout
+layout oneScreen 'MacVim' ${uphalf}
+layout oneScreen 'iTerm'  ${bottomhalf}
+
+
+# Layout bindings
+bind 1:ctrl layout oneScreen
+
+# Location bindings
+
+bind left:alt;cmd     ${lefthalf}
+bind up:alt;cmd       ${full}
+bind right:alt;cmd    ${righthalf}
+bind down:alt;cmd     ${center}
+
+bind up:ctrl;alt      ${uphalf}
+bind down:ctrl;alt    ${bottomhalf}
+bind left:ctrl;alt    ${topLeft}
+bind right:ctrl;alt   ${topRight}
+
+
+# App bindings
+alias hyper alt;cmd
+bind r:${hyper} focus 'Safari'
+bind m:${hyper} focus 'MacVim'
+bind l:${hyper} focus 'Mail'
+bind i:${hyper} focus 'iTerm'
+bind f:${hyper} focus 'Finder'
+bind t:${hyper} focus 'Sublime Text 2'
+bind g:${hyper} focus 'Google Chrome'
+bind x:${hyper} focus 'Firefox'
+bind k:${hyper} focus 'Kindle'
+bind s:${hyper} focus 'Skim'
+bind e:${hyper} focus 'Evernote'
+bind o:${hyper} focus 'Activity Monitor'
+
+
+# bind tab:cmd switch
+
+# Window Hints
+bind e:cmd  ${showNormalHint}
+
+# Grid
+bind esc:ctrl grid
