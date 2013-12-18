@@ -5,6 +5,8 @@ npm install -g forecast-cli
 npm install -g chengyu
 npm install -g tangshi
 npm install -g pinyinjs
+npm install -g qdict
+
 
 npm install -g coffee-script
 npm install -g jshint
