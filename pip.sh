@@ -13,6 +13,8 @@ sudo pip install beautifulsoup4
 
 sudo easy_install readline
 sudo pip install ipython
+sudo pip install csvkit
+sudo pip install cssselect lxml
 
 # Sphinx Twisted
 # sudo pip install pyzmq matplotlib

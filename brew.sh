@@ -8,6 +8,7 @@ brew install the_silver_searcher
 brew install terminal-notifier
 brew install gist
 brew install astyle
+brew install jq
 
 brew tap phinze/homebrew-cask
 brew install brew-cask

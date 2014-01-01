@@ -19,8 +19,10 @@ npm install -g pm2
 npm install -g sfile
 npm install -g marked
 npm install -g grunt-cli
+npm install -g cssbeautify
 
 npm install -g component
 npm install -g bower
 
 npm install -g node-inspector
+npm install -g xml2json-command

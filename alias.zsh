@@ -1,5 +1,8 @@
 export PATH=$PATH:'/Applications/Racket v5.3.6/bin'
 export PATH=$PATH:'/Users/weiwei/bin/mongodb-osx-x86_64-2.4.8/bin'
+source $(brew --prefix nvm)/nvm.sh
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 alias node="node --harmony"
 alias m="mvim"
@@ -8,7 +11,8 @@ alias tree='tree -N'
 alias vaz='vi ~/.zsh.after/alias.zsh'
 alias javac='javac -J-Dfile.encoding=UTF-8'
 alias gems="cd $GEM_HOME/gems/"
-alias npms="/usr/local/share/npm/lib/node_modules"
+alias npms="cd /usr/local/share/npm/lib/node_modules"
+alias pips="cd /Library/python/2.7/site-packages"
 
 alias tfgo='tail -f /var/log/goagent.log'
 alias tfs='tail -f /var/log/system.log'
