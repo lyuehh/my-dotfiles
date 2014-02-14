@@ -1,8 +1,13 @@
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=~/bin:$PATH
 export PATH=$PATH:'/Applications/Racket v5.3.6/bin'
 export PATH=$PATH:'/Users/weiwei/bin/mongodb-osx-x86_64-2.4.8/bin'
 source $(brew --prefix nvm)/nvm.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+alias npm='/usr/local/bin/npm'
+
 
 alias node="node --harmony"
 alias m="mvim"
