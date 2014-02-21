@@ -8,7 +8,6 @@ npm install -g pinyinjs
 npm install -g qdict
 npm install -g opencc-cli
 
-
 npm install -g coffee-script
 npm install -g jshint
 npm install -g csslint
@@ -22,8 +21,12 @@ npm install -g marked
 npm install -g grunt-cli
 npm install -g cssbeautify
 
-npm install -g component
+# npm install -g component
 npm install -g bower
 
 npm install -g node-inspector
 npm install -g xml2json-command
+
+npm install -g gulp
+npm install -g generator-gulp-webapp
+
