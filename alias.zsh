@@ -35,8 +35,8 @@ alias g2u="iconv -f gbk -t utf8"
 alias u2g="iconv -f utf8 -t gbk"
 
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-alias sniff="sudo ngrep -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
-alias sniff2="sudo ngrep -d 'en0' -t '^(GET|POST|PUT|DELETE) ' 'tcp and port 80'"
+alias sniff="sudo ngrep -d 'en0' -t -q -W byline '^(GET|POST) ' 'tcp and port 80'"
+alias sniff2="sudo ngrep -d 'en0' -t -q -W byline '^(GET|POST|PUT|DELETE) ' 'tcp and port 80'"
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 command -v md5sum > /dev/null || alias md5sum="md5"
