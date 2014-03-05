@@ -10,5 +10,6 @@ gem install lolcat
 gem install pomo
 gem install awesome_print
 gem install trevi
+gem install pws
 
 # foreman pygments.rb
