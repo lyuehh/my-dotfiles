@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# mkdir $HOME/go
-# export GOPATH=$HOME/go
+mkdir $HOME/go
+export GOPATH=$HOME/go
