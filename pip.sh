@@ -22,3 +22,5 @@ sudo pip install cssselect lxml
 
 ## pip源
 # pip install --index-url http://pypi.v2ex.com/ -U ibmm2gv
+
+sudo pip install python-virtualenv
