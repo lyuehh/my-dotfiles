@@ -3,12 +3,20 @@ export PATH=~/bin:$PATH
 export PATH=$PATH:'/Applications/Racket v5.3.6/bin'
 export PATH=$PATH:'/Users/weiwei/bin/mongodb-osx-x86_64-2.4.8/bin'
 export PATH=$PATH:/usr/local/share/resin-4.0.38/bin
+export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-alias npm='/usr/local/bin/npm'
-alias ub='ssh weiwei@10.237.113.95'
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+PATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:$PATH
+CALSSPATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/tools.jar
+export JAVA_HOME
+export PATH
+export CALSSPATH
+
+alias ub='ssh weiwei@10.237.113.11'
+alias ub2='ssh weiwei@192.168.31.177'
 
 
 alias node="node --harmony"

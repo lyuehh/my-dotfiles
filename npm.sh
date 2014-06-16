@@ -30,5 +30,5 @@ npm install -g xml2json-command
 npm install -g gulp
 npm install -g generator-gulp-webapp
 
-npm install -g jsbin
-
+#npm install -g jsbin
+npm install -g underscore-cli
