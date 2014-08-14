@@ -57,27 +57,34 @@ bind down:ctrl;alt    ${bottomhalf}
 bind left:ctrl;alt    ${topLeft}
 bind right:ctrl;alt   ${topRight}
 
+# screen change
+bind left:ctrl;alt;cmd throw 0 resize
+bind right:ctrl;alt;cmd throw 1 resize
+
 
 # App bindings
+
 alias hyper alt;cmd
 bind r:${hyper} focus 'Safari'
+bind t:${hyper} focus 'RStudio'
 bind m:${hyper} focus 'MacVim'
 bind l:${hyper} focus 'Mail'
-bind i:${hyper} focus 'iTerm'
-bind f:${hyper} focus 'Finder'
-bind t:${hyper} focus 'Sublime Text 2'
+bind p:${hyper} focus 'iTerm'
+bind n:${hyper} focus 'Finder'
+bind u:${hyper} focus 'Sublime Text 2'
 bind g:${hyper} focus 'Google Chrome'
 bind x:${hyper} focus 'Firefox'
 bind k:${hyper} focus 'Kindle'
 bind s:${hyper} focus 'Skim'
 bind e:${hyper} focus 'Evernote'
+bind j:${hyper} focus 'TextMate'
 bind o:${hyper} focus 'Activity Monitor'
 
 
 # bind tab:cmd switch
 
 # Window Hints
-bind e:cmd  ${showNormalHint}
+bind esc:cmd ${showNormalHint}
 
 # Grid
 bind esc:ctrl grid
