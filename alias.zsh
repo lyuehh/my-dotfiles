@@ -5,7 +5,6 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-alias swift='DEVELOPER_DIR=/Applications/Xcode6-Beta3.app/Contents/Developer/ xcrun swift'
 export PATH=${PATH}:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/tools
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
@@ -15,13 +14,14 @@ export JAVA_HOME
 export PATH
 export CALSSPATH
 
+alias bfg="java -jar ~/bin/bfg-1.11.8.jar"
 alias node="node --harmony"
 alias m="mvim"
 alias locate="mdfind -name"
 alias tree='tree -N'
 alias vaz='vi ~/.zsh.after/alias.zsh'
 alias javac='javac -J-Dfile.encoding=UTF-8'
-alias gems="cd $GEM_HOME/gems/"
+alias gems="cd /Library/Ruby/Gems/2.0.0/gems"
 alias npms="cd /usr/local/share/npm/lib/node_modules"
 alias pips="cd /Library/python/2.7/site-packages"
 
