@@ -1,12 +1,12 @@
 #!/bin/sh
 
 brew update
-brew install git-extras node imagemagick tree wget ack
+brew install git-extras imagemagick tree wget ack
 #brew install enca
 brew install macvim jpeginfo ngrep
 brew install the_silver_searcher
 brew install terminal-notifier
-brew install gist
+brew install gist ssh-copy-id
 brew install astyle
 brew install jq
 brew install gnupg gpg-agent pass

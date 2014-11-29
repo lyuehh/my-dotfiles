@@ -6,7 +6,7 @@ cp ./pip.conf ~/.pip/
 sudo easy_install pip
 sudo pip install MySQL-python
 sudo pip install "Django==1.2"
-sudo pip install PIL
+#sudo pip install PIL
 sudo pip install tornado
 
 sudo easy_install readline
@@ -15,6 +15,7 @@ sudo pip install csvkit
 sudo pip install cssselect lxml
 sudo pip install flask
 sudo pip install pygments
+sudo pip install cheat
 
 # Sphinx Twisted
 # sudo pip install pyzmq matplotlib
