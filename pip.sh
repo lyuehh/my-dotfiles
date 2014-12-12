@@ -16,6 +16,7 @@ sudo pip install cssselect lxml
 sudo pip install flask
 sudo pip install pygments
 sudo pip install cheat
+sudo pip install html2text
 
 # Sphinx Twisted
 # sudo pip install pyzmq matplotlib

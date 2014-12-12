@@ -21,6 +21,7 @@ brew cask fetch iterm2 skim alfred
 brew cask fetch sublime-text textexpander textmate the-unarchiver xscope
 brew cask fetch slate appcleaner
 brew cask fetch caffeine selfControl
+brwe cask fetch smcfancontrol
 #brew cask fetch vagrant
 
 brew cask fetch qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql suspicious-package
