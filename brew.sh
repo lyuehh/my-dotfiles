@@ -11,8 +11,9 @@ brew install astyle
 brew install jq
 brew install gnupg gpg-agent pass
 
-brew tap phinze/homebrew-cask
-brew install brew-cask
+#brew tap phinze/homebrew-cask
+#brew install brew-cask
+brew install caskroom/cask/brew-cask
 
 brew tap homebrew/versions
 #brew install mysql55
