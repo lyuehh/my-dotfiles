@@ -18,6 +18,7 @@ npm install -g marked
 npm install -g grunt-cli
 npm install -g js-beautify
 npm install -g jscs
+npm install jsonlint -g
 
 # npm install -g component
 npm install -g bower
