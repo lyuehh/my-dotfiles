@@ -1,11 +1,15 @@
-export PATH=/usr/local/share/npm/bin:$PATH
+export DOCKER_HOST=tcp://192.168.59.104:2376
+export DOCKER_CERT_PATH=/Users/weiwei/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+#export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=~/bin:$PATH
-export PATH=$PATH:/usr/local/share/resin-4.0.38/bin
+#export PATH=$PATH:/usr/local/share/resin-4.0.38/bin
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export PATH=${PATH}:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/tools
+#export PATH=${PATH}:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/tools
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 PATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:$PATH
@@ -13,17 +17,18 @@ CALSSPATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/dt
 export JAVA_HOME
 export PATH
 export CALSSPATH
-
 #unalias lt
 
 alias node="node --harmony"
+alias bfg="java -jar ~/bin/bfg-1.11.8.jar"
+#alias node="node --harmony"
 alias m="mvim"
 alias locate="mdfind -name"
 alias tree='tree -N'
 alias vaz='vi ~/.zsh.after/alias.zsh'
 alias javac='javac -J-Dfile.encoding=UTF-8'
 alias gems="cd /Library/Ruby/Gems/2.0.0/gems"
-alias npms="cd /usr/local/share/npm/lib/node_modules"
+#alias npms="cd /usr/local/share/npm/lib/node_modules"
 alias pips="cd /Library/python/2.7/site-packages"
 
 alias tfgo='tail -f /var/log/goagent.log'
@@ -45,7 +50,7 @@ alias u2g="iconv -f utf8 -t gbk"
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 alias sniff="sudo ngrep -d 'en0' -t -q -W byline '^(GET|POST) ' 'tcp and port 80'"
 alias sniff2="sudo ngrep -d 'en0' -t -q -W byline '^(GET|POST|PUT|DELETE) ' 'tcp and port 80'"
-alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+#alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 command -v md5sum > /dev/null || alias md5sum="md5"
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
@@ -63,14 +68,6 @@ function gtrss() {
 function myip() {
   ifconfig | grep inet | grep -v inet6 | grep -v 127 | awk '{print $2}'
   # ipconfig getifaddr en0
-}
-
-function json() {
-	if [ -t 0 ]; then # argument
-		python -mjson.tool <<< "$*" | pygmentize -l javascript
-	else # pipe
-		python -mjson.tool | pygmentize -l javascript
-	fi
 }
 
 function escape() {

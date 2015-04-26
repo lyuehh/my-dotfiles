@@ -25,8 +25,9 @@ brew cask fetch caffeine selfControl
 brwe cask fetch smcfancontrol
 #brew cask fetch vagrant
 
-brew cask fetch qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql suspicious-package
-brew cask fetch colorpicker-developer colorpicker-hex
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder
+brew cask install colorpicker-developer colorpicker-hex
 qlmanage -r
 
 # ls -l /usr/local/Library/Formula | grep phinze-cask | awk '{print $9}' | for evil_symlink in $(cat -); do rm -v /usr/local/Library/Formula/$evil_symlink; done
