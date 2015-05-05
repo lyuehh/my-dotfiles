@@ -20,7 +20,9 @@ CALSSPATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/dt
 export JAVA_HOME
 export PATH
 export CALSSPATH
+#unalias lt
 
+alias node="node --harmony"
 alias bfg="java -jar ~/bin/bfg-1.11.8.jar"
 #alias node="node --harmony"
 alias m="mvim"
