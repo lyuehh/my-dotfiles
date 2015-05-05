@@ -10,6 +10,9 @@ source $(brew --prefix nvm)/nvm.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 #export PATH=${PATH}:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/tools
+export PATH=$PATH:'/Applications/Racket v6.1.1/bin'
+export PATH=$PATH:/Users/weiwei/nobackup/gits/Nim/bin
+export PATH=$PATH:$HOME/.nimble/bin
 
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 PATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:$PATH
