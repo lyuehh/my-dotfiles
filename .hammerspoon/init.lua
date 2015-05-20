@@ -1,3 +1,5 @@
+require "pomodoor"
+
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
     hs.notify.new({title="Hammerspoon", informativeText="Hello World"}):send():release()
 end)
@@ -45,12 +47,39 @@ hs.hotkey.bind(hyper, "2", function() resize(1, 0, 2, 2) end)
 hs.hotkey.bind(hyperCtrl, "right", function() hs.window.focusedWindow():moveOneScreenEast(0) end)
 hs.hotkey.bind(hyperCtrl, "left", function() hs.window.focusedWindow():moveOneScreenWest(0) end)
 
-hs.hotkey.bind(hyperCtrl, "l", function() hs.caffeinate.lockScreen() end)
+hs.hotkey.bind(hyperCtrl, "l", function() hs.caffeinate.systemSleep() end)
 hs.hotkey.bind(hyperCtrl, "e", function() hs.applescript.applescript('tell app \"Finder\" to empty the trash') end)
 -- hs.hotkey.bind(hyperCtrl, "s", function() hs.caffeinate.startScreensaver() end)
 
 -- Hints
 hs.hotkey.bind(hyper, "h", function() hs.hints.windowHints() end)
+
+-- pomodoro key binding
+hs.hotkey.bind(hyper, '9', function() pom_enable() end)
+hs.hotkey.bind(hyper, '0', function() pom_disable() end)
+
+
+-- Replace Caffeine.app with 18 lines of Lua :D
+local caffeine = hs.menubar.new()
+
+function setCaffeineDisplay(state)
+    local result
+    if state then
+        result = caffeine:setIcon("caffeine-on.pdf")
+    else
+        result = caffeine:setIcon("caffeine-off.pdf")
+    end
+end
+
+function caffeineClicked()
+    setCaffeineDisplay(hs.caffeinate.toggle("displayIdle"))
+end
+
+if caffeine then
+    caffeine:setClickCallback(caffeineClicked)
+    setCaffeineDisplay(hs.caffeinate.get("displayIdle"))
+end
+
 
 function tolerance(a, b) return math.abs(a - b) < 32 end
 
