@@ -22,8 +22,6 @@ export PATH
 export CALSSPATH
 #unalias lt
 
-alias node="node --harmony"
-alias bfg="java -jar ~/bin/bfg-1.11.8.jar"
 #alias node="node --harmony"
 alias m="mvim"
 alias locate="mdfind -name"

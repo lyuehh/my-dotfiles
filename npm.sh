@@ -1,6 +1,7 @@
 #!/bin/sh
 
 npm install -g gtrs
+npm install -g ccal
 #npm install -g chengyu
 #npm install -g tangshi
 #npm install -g songci
@@ -35,6 +36,9 @@ npm install -g generator-gulp-webapp
 
 npm install -g puer
 npm install -g watchify
+
+npm install -g nrm
+npm install -g cnpm
 
 #npm install -g jsbin
 #npm install -g underscore-cli

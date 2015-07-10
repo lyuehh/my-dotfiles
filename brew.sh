@@ -10,6 +10,7 @@ brew install gist ssh-copy-id
 brew install astyle
 brew install jq
 brew install gnupg gpg-agent pass
+brew install bfg
 
 #brew tap phinze/homebrew-cask
 #brew install brew-cask
