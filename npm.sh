@@ -2,6 +2,7 @@
 
 npm install -g gtrs
 npm install -g ccal
+npm install -g tern
 #npm install -g chengyu
 #npm install -g tangshi
 #npm install -g songci
