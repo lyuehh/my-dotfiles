@@ -25,6 +25,7 @@ npm install jsonlint -g
 # npm install -g component
 npm install -g bower
 npm install -g localtunnel
+npm install -g surge
 
 #npm install -g node-inspector
 #npm install -g xml2json-command
@@ -38,7 +39,7 @@ npm install -g generator-gulp-webapp
 npm install -g puer
 npm install -g watchify
 
-npm install -g nrm
+#npm install -g nrm
 npm install -g cnpm
 
 #npm install -g jsbin

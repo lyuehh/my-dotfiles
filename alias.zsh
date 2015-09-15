@@ -1,6 +1,6 @@
-export DOCKER_HOST=tcp://192.168.59.104:2376
-export DOCKER_CERT_PATH=/Users/weiwei/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+#export DOCKER_HOST=tcp://192.168.59.104:2376
+#export DOCKER_CERT_PATH=/Users/weiwei/.boot2docker/certs/boot2docker-vm
+#export DOCKER_TLS_VERIFY=1
 
 #export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=~/bin:$PATH
@@ -10,16 +10,16 @@ source $(brew --prefix nvm)/nvm.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 #export PATH=${PATH}:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/platform-tools:/Users/weiwei/code/adt-bundle-mac-x86_64-20140702/sdk/tools
-export PATH=$PATH:'/Applications/Racket v6.1.1/bin'
+#export PATH=$PATH:'/Applications/Racket v6.1.1/bin'
 #export PATH=$PATH:/Users/weiwei/nobackup/gits/Nim/bin
-export PATH=$PATH:$HOME/.nimble/bin
+#export PATH=$PATH:$HOME/.nimble/bin
 
-JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
-PATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:$PATH
-CALSSPATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/tools.jar
-export JAVA_HOME
-export PATH
-export CALSSPATH
+#JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+#PATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/bin:$PATH
+#CALSSPATH=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home/lib/tools.jar
+#export JAVA_HOME
+#export PATH
+#export CALSSPATH
 #unalias lt
 
 #alias node="node --harmony"
@@ -98,4 +98,8 @@ pbhex() {
 }
 function gig() {
     curl -L -s https://www.gitignore.io/api/$@ ;
+}
+
+function tnew() {
+    tmux new-session -As `basename $PWD`
 }
