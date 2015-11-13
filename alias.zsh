@@ -2,6 +2,8 @@
 #export DOCKER_CERT_PATH=/Users/weiwei/.boot2docker/certs/boot2docker-vm
 #export DOCKER_TLS_VERIFY=1
 
+alias rm='trash'
+
 #export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=~/bin:$PATH
 #export PATH=$PATH:/usr/local/share/resin-4.0.38/bin

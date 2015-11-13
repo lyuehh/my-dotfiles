@@ -1,16 +1,17 @@
 #!/bin/sh
 
 brew update
-brew install git-extras imagemagick tree wget ack
+brew install imagemagick tree wget ack
 #brew install enca
 brew install macvim jpeginfo ngrep
-brew install the_silver_searcher
-brew install terminal-notifier
-brew install gist ssh-copy-id
-brew install astyle
-brew install jq
-brew install gnupg gpg-agent pass
-brew install bfg
+brew install the_silver_searcher terminal-notifier
+brew install bfg trash
+brew install jq parallel
+brew install git git-extras git-lfs
+brew install coreutils gawk gnu-sed
+brew install zsh hub gist ssh-copy-id
+brew install go lua nvm astyle
+brew install reattach-to-user-namespace tmux
 
 #brew tap phinze/homebrew-cask
 #brew install brew-cask

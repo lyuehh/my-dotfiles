@@ -16,7 +16,6 @@ local key2App = {
     r = 'Safari',
     b = 'Mail',
     m = 'MacVim',
-    j = 'TextMate',
     x = 'xScope',
     s = 'Skim',
     p = 'Adobe Photoshop CC 2014',
@@ -25,6 +24,7 @@ local key2App = {
     w = 'Preview',
     e = 'Evernote',
     n = 'Finder',
+    k = 'Dash',
     g = 'Google Chrome',
 }
 for key, app in pairs(key2App) do
@@ -47,7 +47,7 @@ hs.hotkey.bind(hyper, "2", function() resize(1, 0, 2, 2) end)
 hs.hotkey.bind(hyperCtrl, "right", function() hs.window.focusedWindow():moveOneScreenEast(0) end)
 hs.hotkey.bind(hyperCtrl, "left", function() hs.window.focusedWindow():moveOneScreenWest(0) end)
 
-hs.hotkey.bind(hyperCtrl, "l", function()  hs.caffeinate.systemSleep(); hs.caffeinate.lockScreen() end)
+hs.hotkey.bind(hyperCtrl, "l", function() hs.caffeinate.lockScreen(); end)
 hs.hotkey.bind(hyperCtrl, "e", function() hs.applescript.applescript('tell app \"Finder\" to empty the trash') end)
 -- hs.hotkey.bind(hyperCtrl, "s", function() hs.caffeinate.startScreensaver() end)
 

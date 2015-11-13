@@ -1,6 +1,6 @@
 #!/bin/sh
 
-gem install rails
+#gem install rails
 gem install sinatra
 gem install sinatra-contrib
 gem install jekyll
@@ -10,7 +10,9 @@ gem install lolcat
 gem install pomo
 gem install awesome_print
 # gem install trevi
-gem install pws
+#gem install pws
 gem install god
+gem install guard
+gem install guard-livereload
 
 # foreman pygments.rb
