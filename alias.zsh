@@ -41,9 +41,6 @@ alias gcam='git commit -a -m'
 alias gpom='git pull origin master'
 alias gpuom='git push origin master'
 alias gpu2m='git push origin master; git push gitlab master'
-alias gcos='git checkout mergeSupport'
-alias gpos='git pull origin mergeSupport'
-alias gpuos='git push origin mergeSupport'
 alias gpuogp='git push origin gh-pages'
 alias gcom="git checkout master"
 

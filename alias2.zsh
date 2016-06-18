@@ -64,7 +64,3 @@ alias gr='git rebase'
 alias gra='git rebase --abort'
 alias ggrc='git rebase --continue'
 alias gbi='git rebase --interactive'
-
-alias ppm='cd ~/work/project/python_mail'
-alias pwps='cd ~/work/project/webpy_sohu'
-

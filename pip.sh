@@ -16,7 +16,7 @@ sudo pip install csvkit
 sudo pip install flask
 sudo pip install pygments
 sudo pip install cheat
-sudo pip install html2text
+#sudo pip install html2text
 sudo pip install python-virtualenv
 
 # Sphinx Twisted
