@@ -13,6 +13,8 @@ brew install zsh hub gist ssh-copy-id
 brew install go lua nvm astyle
 brew install reattach-to-user-namespace tmux
 
+brew install fasd zsh-syntax-highlighting zsh-autosuggestions zsh-completions zsh-history-substring-search
+
 #brew tap phinze/homebrew-cask
 #brew install brew-cask
 #brew install caskroom/cask/brew-cask
